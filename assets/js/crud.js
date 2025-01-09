@@ -1,13 +1,8 @@
-//dados
-const nameinp = document.getElementById("nameInp");
-const msginp = document.getElementById("msgInp");
+
 //area de resultado
 const areaResult = document.getElementById('exemple-result');
 areaResult.style.display = "none";
-
-//modal
-const modalDiv = document.createElement("div");
-const modalText = document.createElement("h1");
+jõ
 
 
 class Person{
