@@ -16,16 +16,15 @@ class Person{
         }
 
         //ADICIONA
-        add(names,texts){
+        add(ok){
             //verifica se tá vazio
             try{
-                if(!names && !texts){
-                    throw new Error("Preencha os dois campos");//gera erro
+                if(!ok){
+                    throw new Error("Preencha");//gera erro
                 }
                 
             const newReport = {
-                    names,
-                    texts
+                    ok
                 };
                 this.reports.push(newReport);//coloca no array de objetos o tal objeto
 
@@ -35,7 +34,6 @@ class Person{
 
                 //limpa
                 nameinp.value='';
-                msginp.value = '';
 
                 modalText.innerText = '';//recebe o erro
             }catch(erro){
@@ -101,9 +99,9 @@ form.addEventListener("submit", (event)=> {
 
 
         const name = nameinp.value.trim();
-        const text = msginp.value.trim();
 
-        related.add(name, text);
+
+        related.add(name);
 
     
 
